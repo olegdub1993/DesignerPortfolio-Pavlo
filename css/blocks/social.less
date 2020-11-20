@@ -1,0 +1,20 @@
+// main: ../style.less
+.social {
+  margin-bottom: 42px;
+  display: flex;
+
+  @media (max-width: 991px) {
+    justify-content: center;
+  }
+}
+
+.social__link {
+  text-decoration: none;
+  margin-right: 10px;
+  transition: transform 0.2s linear;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.social__icon {
+}
