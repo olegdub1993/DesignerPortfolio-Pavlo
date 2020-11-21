@@ -1,0 +1,72 @@
+// main: ../style.less
+.articless {
+  display: flex;
+  margin: 0 -1rem;
+}
+.articless__col {
+  width: 33.33333%;
+  padding: 1rem;
+}
+.articles__item {
+  margin-bottom: 2rem;
+}
+.articles__header {
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+.articles__date {
+  width: 77px;
+  height: 77px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  line-height: 1.4;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 1.06rem;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: @black;
+}
+.articles__photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.articles__content {
+  margin-bottom: 2rem;
+}
+.articles__title {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2b2a2c;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.articles__cat {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #2b2a2c;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.articles__text {
+  font-size: 0.8rem;
+  line-height: 2;
+  color: #717072;
+  font-weight: 300;
+}
+.articles__link {
+}

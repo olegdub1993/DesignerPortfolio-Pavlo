@@ -1,0 +1,57 @@
+// main: ../style.less
+.footer {
+  background-color: @black;
+  padding: 15px 0;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__credits {
+  display: flex;
+  align-items: center;
+}
+.footer__copyright {
+  font-size: 14px;
+  color: #8d8d8e;
+  font-weight: 400;
+  border-right: 1px solid #413f41;
+  padding-right: 0.8rem;
+  margin-right: 1rem;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+.footer__social_link {
+  text-decoration: none;
+  margin-right: 18px;
+}
+.footer__nav {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.footer__nav_link {
+  margin-left: 1.5rem;
+  font-size: 14px;
+  line-height: 15px;
+  color: #8d8d8e;
+  font-weight: 400;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &_btn {
+    border: 1px solid @grey-light;
+    border-radius: 20px;
+    padding: 0.5rem 1.4rem;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: @black;
+      background-color: #8d8d8e;
+    }
+  }
+}
