@@ -10,6 +10,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: @black;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 h1,
 h2,
@@ -27,6 +30,9 @@ p {
 *::after {
   box-sizing: border-box;
 }
+// vendor
+@import "vendor/slick";
+// blocks
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/user";
@@ -42,3 +48,11 @@ p {
 @import "blocks/news";
 @import "blocks/articless";
 @import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-work";
+@import "blocks/timeline";
+@import "blocks/progress-bar";
+@import "blocks/helpers";
+@import "blocks/contact";
+@import "blocks/form";
+@import "blocks/burger";

@@ -1,13 +1,20 @@
 // main: ../style.less
 .about {
   margin: 5.6rem 0;
+  @media @tablet {
+    margin: 1rem 0 4rem 0;
+  }
 }
 .about__inner {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1090px;
 }
 .about__photo {
   width: 50%;
+  @media @tablet {
+    display: none;
+  }
 }
 .about__icon {
   object-fit: cover;
@@ -19,12 +26,26 @@
   margin-top: 2rem;
   width: 50%;
   padding-left: 3.2rem;
+  @media @tablet {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  @media @mobile {
+    margin-top: 0;
+  }
 }
 .about__title {
   font-size: 3rem;
   color: #2b2a2c;
   font-weight: 700;
   text-transform: uppercase;
+  @media @notebook {
+    font-size: 2.5rem;
+  }
+  @media @mobile {
+    font-size: 2rem;
+  }
 }
 .about__bigtitle {
   position: relative;
@@ -35,6 +56,12 @@
   margin-bottom: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
+  @media @notebook {
+    font-size: 4.5rem;
+  }
+  @media @mobile {
+    font-size: 3rem;
+  }
 }
 .about__text {
   font-size: 14px;

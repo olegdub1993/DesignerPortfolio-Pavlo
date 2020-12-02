@@ -1,32 +1,47 @@
 // main: ../style.less
 
+.intro {
+  @media @mobile {
+    margin-top: 80px;
+  }
+}
 .intro__inner {
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid fade(@grey, 30%);
-  @media (max-width: 991px) {
-  }
 }
 .intro__content {
   padding-top: 100px;
   padding-bottom: 103px;
   width: 60%;
-  @media (max-width: 991px) {
+  @media @tablet {
     width: 100%;
     text-align: center;
+  }
+  @media @mobile {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @media @mobile-sm {
+    padding-top: 30px;
   }
 }
 .intro__subtitle {
   font-size: 2.13rem;
-
   color: @black;
   font-weight: 200;
+  @media @mobile {
+    font-size: 1.7rem;
+  }
 }
 .intro__title {
   font-size: 3rem;
   font-weight: 700;
   color: @black;
   margin-bottom: 10px;
+  @media @mobile {
+    font-size: 2rem;
+  }
 }
 .intro__text {
   font-size: 1.2rem;
@@ -38,7 +53,7 @@
   width: 40%;
   display: flex;
   justify-content: center;
-  @media (max-width: 991px) {
+  @media @tablet {
     width: 100%;
   }
 }
@@ -46,4 +61,7 @@
   max-width: 100%;
   display: block;
   min-height: 500px;
+  @media @tablet {
+    min-height: auto;
+  }
 }

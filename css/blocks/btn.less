@@ -3,6 +3,7 @@
   display: inline-block;
   vertical-align: top;
   min-width: 170px;
+  background-color: transparent;
   text-align: center;
   border: 1px solid @grey;
   font-family: inherit;
@@ -30,5 +31,14 @@
     font-weight: 700;
     border-width: 2px;
     min-width: 0;
+  }
+  &_thin {
+    min-width: 145px;
+    font-size: 0.8rem;
+  }
+  @media @mobile {
+    min-width: 120px;
+    font-size: 0.85rem;
+    padding: 1em 1.5em;
   }
 }

@@ -1,14 +1,22 @@
 // main: ../style.less
 .articless {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -1rem;
 }
 .articless__col {
   width: 33.33333%;
   padding: 1rem;
+  @media @mobile {
+    width: 100%;
+  }
 }
 .articles__item {
   margin-bottom: 2rem;
+  @media @mobile {
+    max-width: 370px;
+    margin: 0 auto;
+  }
 }
 .articles__header {
   position: relative;

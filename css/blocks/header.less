@@ -3,6 +3,15 @@
 .header {
   padding: 1.2rem 0;
   width: 100%;
+  position: relative;
+  @media @mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
 }
 .header__inner {
   display: flex;
